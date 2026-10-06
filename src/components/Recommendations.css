@@ -1,0 +1,91 @@
+.recommendations {
+  animation: fadeInUp 0.6s ease-out 0.5s both;
+}
+
+.recommendations__title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  margin-bottom: var(--space-6);
+  color: var(--color-text-primary);
+}
+
+.recommendations__grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.recommendations__card {
+  padding: var(--space-5);
+  animation: slideInRight 0.5s ease-out both;
+  border-left: 3px solid transparent;
+}
+
+.recommendations__card--critical { border-left-color: #ef4444; }
+.recommendations__card--category { border-left-color: #f59e0b; }
+.recommendations__card--positive { border-left-color: #10b981; }
+.recommendations__card--improvement { border-left-color: #3b82f6; }
+.recommendations__card--growth { border-left-color: #8b5cf6; }
+.recommendations__card--info { border-left-color: #06b6d4; }
+.recommendations__card--tip { border-left-color: #a78bfa; }
+
+.recommendations__card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+.recommendations__card-icon {
+  font-size: var(--font-size-xl);
+}
+
+.recommendations__card-title {
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.recommendations__card-desc {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--space-3);
+}
+
+.recommendations__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+
+.recommendations__skill-tag {
+  display: inline-block;
+  padding: 3px 10px;
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  background: rgba(139, 92, 246, 0.12);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  border-radius: var(--radius-full);
+  color: var(--color-text-accent);
+}
+
+.recommendations__card-action {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-border);
+}
+
+.recommendations__card-action svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
